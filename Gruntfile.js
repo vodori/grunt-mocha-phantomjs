@@ -53,13 +53,27 @@ module.exports = function(grunt) {
           'reporter': 'dot'
         }
       }
+    },
+    watch: {
+      options: {
+        spawn: false
+      },
+      mocha_phantomjs: {
+        files: ['test/*.html'],
+        tasks: ['mocha_phantomjs:output']
+      }
     }
+  });
+
+  grunt.event.on('watch', function(action, filepath) {
+    grunt.config('mocha_phantomjs.output', [filepath]);
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadTasks('tasks');
 
-  grunt.registerTask('default', ['jshint', 'connect', 'mocha_phantomjs']);
+  grunt.registerTask('default', ['jshint', 'connect', 'mocha_phantomjs', 'watch']);
 
 };
