@@ -28,7 +28,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "mocha-phantomjs": "https://github.com/truevektordev/mocha-phantomjs.git#4b44430b932a662c07181ebf675ab27cfd181c4b",
+    "mocha-phantomjs": "git://github.com/truevektordev/mocha-phantomjs.git#4b44430b932a662c07181ebf675ab27cfd181c4b",
     "phantomjs": "~1.9.1-0"
   },
   "devDependencies": {
