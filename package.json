@@ -28,7 +28,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "mocha-phantomjs": "git://github.com/vodori/mocha-phantomjs.git#e5948ca1dc80a04b10fc84af0f5f910e9b773c52",
+    "mocha-phantomjs": "git://github.com/vodori/mocha-phantomjs.git#032ae4211c6e00b8a773c1d5b4714b4297dc50d1",
     "phantomjs": "~1.9.1-0"
   },
   "devDependencies": {
